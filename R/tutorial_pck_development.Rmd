@@ -1,0 +1,91 @@
+---
+title: "tutorial_pck_development"
+author: "Niklas"
+date: "24 9 2021"
+output: html_document
+---
+
+# Package Development (John Muschellij)
+
+- Create package
+- Initialise with GIT
+
+```{r}
+library("available")
+
+available("niktools")
+```
+
+## Develop first function (into R/ folder)
+
+```{r}
+hello <- function(x){
+  print(paste("Hello", x, "this is the world!"))
+}
+```
+
+## Update DESCRIPTION file manually
+
+Author, License, Name, Description, etc...
+
+```{r}
+usethis::use_gpl3_license()
+```
+
+
+## BUILD
+
+Click: Build -> Install and Restart
+
+Build -> Configure build tools:
+
+Generate documentation with Roxygen
+Check package "--as-cran"
+
+
+## Roxygen as code documentation
+
+Code -> Insert Roxygen Skeleton
+
+"Ctrl + Alt + Shift + R"
+
+```{r}
+
+#' My first test function in my first package
+#'
+#' @param x Character, the name of the person
+#'
+#' @return The output string: \code{\link{print}}
+#' @export
+#'
+#' @examples
+#' hello("Niklas")
+#' \dontrun{
+#' hello("Steve")
+#'}
+hello <- function(x){
+  print(paste("Hello", x, "this is the world!"))
+}
+```
+
+Build -> Clean & Rebuild
+
+Now: NAMESPACE and /man are updated.
+
+@export: takes care, that function is exported and useable
+
+# Check package
+
+Build - Check - package
+
+
+# usethis package
+
+```{r}
+# usethis::use_readme_rmd() # adds readme file
+devtools::build_readme() # 
+```
+
+
+
+

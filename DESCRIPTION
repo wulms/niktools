@@ -1,0 +1,15 @@
+Package: niktools
+Title: Contains All Code Used Often By Niklas Wulms
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Niklas",
+           family = "Wulms",
+           role = c("aut", "cre"),
+           email = "niklas.wulms@live.de",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This package contains helper function often used by Niklas Wulms.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
