@@ -6,7 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of niktools is to …
+The goal of niktools is to provide for myself some often used functions.
 
 ## Installation
 

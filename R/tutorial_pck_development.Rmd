@@ -87,5 +87,14 @@ devtools::build_readme() #
 ```
 
 
+Use GIT and GITHUB
+
+```{r eval=FALSE}
+usethis::use_git()
+usethis::use_github()
+
+usethis::create_github_token()
+gitcreds::gitcreds_set()
+```
 
 
